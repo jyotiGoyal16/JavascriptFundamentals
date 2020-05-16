@@ -12,4 +12,4 @@ These above three methods help us in achieving the concept of function borrowing
 
 Function borrowing - In JavaScript, sometimes it’s desirable to reuse a function or method on a different object other than the object or prototype it was defined on. By using call(), apply() and bind(), we can easily borrow methods from different objects without having to inherit from them.
 
-![asynDeferScript](asyncDeferScript.png)
+![asyncDeferScript](asyncDeferScript.png)
