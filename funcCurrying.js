@@ -16,7 +16,7 @@ multiplyByTwo(9);
 let multiplyByThree = multiply.bind(this, 3);
 multiplyByThree(5);
 
-//Using closure- closure is when a function return a function and the inner function is still having the access to its scope even if it is running outside the scope
+//Using closure- closure is when a function return a function and the inner function is still having the access to its parent scope even if it is running outside the scope
 let multiply1 = function(x){
     return function(y){
         console.log(x*y);

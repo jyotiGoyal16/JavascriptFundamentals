@@ -13,7 +13,7 @@ let name1 = {
   lastName: "xyz",
 };
 
-//function borrowing- take function from one and use in other function
+//function borrowing- take function from one object and use in other object
 name.printFullName.call(name1);
 
 //Another way of doing above thing is call, apply and bind method
