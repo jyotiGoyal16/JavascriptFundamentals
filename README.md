@@ -24,3 +24,11 @@ that it stalls the performance of the web page. In other words, it limits the ra
 Async/Defer script- 
 
 ![asyncDeferScript](asyncDeferScript.png)
+
+Event Bubbling - Event Bubbling is the event starts from the deepest element or target element to its parents, then all its ancestors which are on the way to bottom to top. At present, all the modern browsers have event bubbling as the default way of event flow.
+
+Event capturing - Event Capturing is the event starts from top element to target element. Modern browser doesn’t support event capturing by default but we can achieve that by code in JavaScript using useCapture.
+
+Stop propogation - The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases.
+
+![eventBubblingCapturing](eventBubblingAndCapturing.png)
