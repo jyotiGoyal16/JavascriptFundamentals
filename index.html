@@ -22,6 +22,10 @@
         border: 2px solid black;
         background-color:coral;
     }
+    .inputDiv {
+        min-height: 40px;
+        padding:0;
+    }
 </style>
 </head>
 <body>
@@ -32,7 +36,20 @@
             <div id="child"></div>
         </div>
     </div>
+    <div>
+        <ul id="category">
+            <li id="laptops">Laptops</li>
+            <li id="cameras">Cameras</li>
+            <li id="shoes">Shoes</li>
+        </ul>
+    </div>
+    <div id="form">
+        <div class="inputDiv">Name: <input type="text" id="name" data-uppercase></div>
+        <div class="inputDiv">State: <input type="text" id="state" data-uppercase></div>
+        <div class="inputDiv">Phone: <input type="text" id="phone"></div>
+    </div>
     <script src="debounce.js"></script>
     <script src="eventBubbleCapture.js"></script>
+    <script src="eventDelegation.js"></script>
 </body>
 </html>

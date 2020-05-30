@@ -32,3 +32,11 @@ Event capturing - Event Capturing is the event starts from top element to target
 Stop propogation - The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases.
 
 ![eventBubblingCapturing](eventBubblingAndCapturing.png)
+
+Event Delegation - The idea is that if we have a lot of elements handled in a similar way, then instead of assigning a handler to each of them – we put a single handler on their common ancestor.
+
+Example for event delegation - When an event is triggered on an element, the following occurs:
+
+The event is dispatched to its target EventTarget and any event listeners found there are triggered. Bubbling events will then trigger any additional event listeners found by following the EventTarget's parent chain upward, checking for any event listeners registered on each successive EventTarget. This upward propagation will continue up to and including the Document.
+
+Event bubbling provides the foundation for event delegation in browsers. We can bind an event handler to a single parent element, and that handler will get executed whenever the event occurs on any of its child nodes (and any of their children in turn). This is event delegation.
